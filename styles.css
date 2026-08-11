@@ -1,0 +1,460 @@
+/* ===== Reset & Base ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', system-ui, sans-serif;
+    color: #1a1a1a;
+    line-height: 1.7;
+    background: #ffffff;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-weight: 500;
+}
+
+/* ===== Header ===== */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0.97);
+    border-bottom: 1px solid #eaeaea;
+    z-index: 100;
+    backdrop-filter: blur(8px);
+}
+
+.header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 72px;
+}
+
+.logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.35rem;
+    color: #1a1a1a;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.logo span {
+    font-weight: 400;
+    color: #555;
+}
+
+.nav {
+    display: flex;
+    gap: 36px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #333;
+    font-size: 0.95rem;
+    font-weight: 400;
+    transition: color 0.2s;
+}
+
+.nav a:hover {
+    color: #0a4d8c;
+}
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* ===== Hero ===== */
+.hero {
+    padding: 160px 0 100px;
+    text-align: center;
+}
+
+.hero-label {
+    text-transform: none;
+    letter-spacing: 2px;
+    font-size: 0.8rem;
+    color: #666;
+    margin-bottom: 16px;
+}
+
+.hero h1 {
+    font-size: 2.8rem;
+    line-height: 1.25;
+    margin-bottom: 12px;
+    color: #111;
+}
+
+.hero-subtitle {
+    font-size: 1.25rem;
+    color: #444;
+    margin-bottom: 28px;
+}
+
+.hero-text {
+    max-width: 680px;
+    margin: 0 auto 36px;
+    color: #444;
+    font-size: 1.05rem;
+}
+
+.btn {
+    display: inline-block;
+    background: #0a4d8c;
+    color: white;
+    padding: 14px 32px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: 500;
+    transition: background 0.2s;
+}
+
+.btn:hover {
+    background: #083a6b;
+}
+
+.hero-note {
+    margin-top: 16px;
+    font-size: 0.9rem;
+    color: #777;
+}
+
+/* ===== Sections ===== */
+.section {
+    padding: 90px 0;
+}
+
+.section-alt {
+    background: #f8f9fa;
+}
+
+.section h2 {
+    font-size: 2rem;
+    margin-bottom: 48px;
+    text-align: center;
+}
+
+/* ===== Services ===== */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 32px;
+    margin-bottom: 48px;
+}
+
+.service-card {
+    background: white;
+    padding: 32px;
+    border: 1px solid #eaeaea;
+    border-radius: 6px;
+}
+
+.service-card h3 {
+    font-size: 1.25rem;
+    margin-bottom: 16px;
+    color: #0a4d8c;
+}
+
+.service-card p {
+    margin-bottom: 12px;
+    color: #444;
+}
+
+.tarifs-box {
+    background: #f0f4f8;
+    padding: 28px 32px;
+    border-radius: 6px;
+    text-align: center;
+    color: #333;
+    font-size: 1.05rem;
+}
+
+/* ===== À propos ===== */
+.about-content {
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+.about-content p {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.about-content ul {
+    margin: 16px 0 24px 24px;
+    color: #333;
+}
+
+.languages {
+    margin-top: 32px;
+    padding-top: 24px;
+    border-top: 1px solid #ddd;
+    font-size: 1.05rem;
+}
+
+/* ===== Processus ===== */
+.process-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 28px;
+}
+
+.process-step {
+    text-align: center;
+    padding: 24px 16px;
+}
+
+.step-number {
+    display: inline-flex;
+    width: 42px;
+    height: 42px;
+    background: #0a4d8c;
+    color: white;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+.process-step h3 {
+    font-size: 1.15rem;
+    margin-bottom: 10px;
+}
+
+.process-step p {
+    color: #555;
+    font-size: 0.95rem;
+}
+
+/* ===== Contact ===== */
+.contact-intro {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #444;
+}
+
+.contact-form {
+    max-width: 560px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #0a4d8c;
+}
+
+.contact-note {
+    text-align: center;
+    margin-top: 36px;
+    color: #555;
+}
+
+.contact-note a {
+    color: #0a4d8c;
+    text-decoration: none;
+}
+
+/* ===== Footer ===== */
+.footer {
+    background: #1a1a1a;
+    color: #aaa;
+    text-align: center;
+    padding: 28px 0;
+    font-size: 0.9rem;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+    .nav {
+        display: none;
+        position: absolute;
+        top: 72px;
+        left: 0;
+        right: 0;
+        background: white;
+        flex-direction: column;
+        padding: 24px;
+        gap: 16px;
+        border-bottom: 1px solid #eee;
+    }
+
+    .nav.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .hero h1 {
+        font-size: 2.1rem;
+    }
+
+    .hero {
+        padding: 130px 0 70px;
+    }
+
+    .section {
+        padding: 70px 0;
+    }
+}
+.about-intro {
+    font-size: 1.25rem;
+    font-family: 'Playfair Display', Georgia, serif;
+    color: #0a4d8c;
+    margin-bottom: 28px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.about-content ul {
+    margin: 12px 0 28px 20px;
+}
+
+.about-content li {
+    margin-bottom: 6px;
+}
+/* Bloc tarifaire dans les cartes de services */
+.tarif-box {
+    margin-top: 24px;
+    padding-top: 20px;
+    border-top: 1px solid #e0e0e0;
+    font-size: 0.95rem;
+    color: #444;
+}
+
+.tarif-box p {
+    margin-bottom: 10px;
+}
+
+.tarif-box strong {
+    color: #0a4d8c;
+}
+/* Rangée des tarifs */
+.tarifs-row {
+    margin-top: 20px;
+}
+
+/* Style des cartes tarifs (contraste) */
+.tarif-card {
+    background: #f7f8fa;
+    border: 1px solid #e5e7eb;
+    border-radius: 6px;
+    padding: 22px 24px;
+    font-size: 0.92rem;          /* texte un peu plus petit */
+    color: #555;                 /* texte plus clair */
+    line-height: 1.55;
+}
+
+.tarif-card strong {
+    color: #0a4d8c;
+    font-size: 0.95rem;
+}
+
+.tarif-card p {
+    margin-bottom: 10px;
+}
+/* Cartes de services (fond légèrement gris) */
+.service-card {
+    background: #f7f8fa;
+    border: 1px solid #e5e7eb;
+}
+
+/* Rangée des tarifs */
+.tarifs-row {
+    margin-top: 20px;
+}
+
+/* Cartes tarifs (fond blanc + contraste) */
+.tarif-card {
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 6px;
+    padding: 22px 24px;
+    font-size: 0.92rem;
+    color: #555;
+    line-height: 1.55;
+}
+
+.tarif-card strong {
+    color: #0a4d8c;
+    font-size: 0.95rem;
+}
+
+.tarif-card p {
+    margin-bottom: 10px;
+}
+/* Barre Combinaisons linguistiques */
+.languages-bar {
+    margin: 28px 0 20px;
+    padding: 16px 24px;
+    background: #f0f4f8;
+    border: 1px solid #e0e7ef;
+    border-radius: 6px;
+    text-align: center;
+}
+
+.languages-bar p {
+    margin: 0;
+    font-size: 1.05rem;
+    color: #333;
+}
+
+.languages-bar strong {
+    color: #0a4d8c;
+}
+.cta-center {
+    text-align: center;
+    margin: 28px 0 32px;
+}
+
+.cta-center .hero-note {
+    margin-top: 12px;
+}
+.lang-switch {
+    font-weight: 600;
+    margin-left: 12px;
+    opacity: 0.85;
+}
+.lang-switch:hover {
+    opacity: 1;
+}
